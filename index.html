@@ -479,54 +479,6 @@
   .tarjeta b{font-size:13.5px;font-weight:700;line-height:1.2;color:var(--t1)}
   .tarjeta span{font-size:11px;color:var(--t3);line-height:1.35;display:block}
   .aviso{background:#fff;border:0;border-left:4px solid var(--info);border-radius:12px;box-shadow:var(--sombra);padding:11px 12px;display:flex;gap:10px;align-items:center;margin-bottom:8px;width:100%;text-align:left;cursor:pointer;font-family:inherit}
-  /* ---- test de alcoholemia (v6.1) ---- */
-  .alc{max-width:560px;margin:0 auto;padding:14px 14px 40px}
-  .alc-paso{display:flex;gap:12px;align-items:flex-start;background:#fff;border-radius:12px;box-shadow:var(--sombra);padding:13px 14px;margin-bottom:10px}
-  .alc-paso .n{flex:none;width:30px;height:30px;border-radius:50%;background:var(--acento);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:14px}
-  .alc-paso.hecho .n{background:var(--ok)}
-  .alc-paso > div{flex:1;min-width:0}
-  .alc-paso b{display:block;font-size:14px;color:var(--t1)}
-  .alc-paso span{display:block;font-size:12px;color:var(--t3);margin-top:2px}
-  .alc-foto{margin-top:10px;display:flex;gap:10px;align-items:center}
-  .alc-foto img{width:84px;height:84px;object-fit:cover;border-radius:10px;border:1px solid var(--line)}
-  .alc-cam{border:1.5px dashed var(--acento);background:var(--acento-suave,#eef1f4);color:var(--acento);border-radius:10px;padding:12px 14px;font:700 13px Montserrat,sans-serif;cursor:pointer}
-  .alc-res{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
-  .alc-res button{border:2px solid var(--line);background:#fff;border-radius:12px;padding:14px 8px;font:700 13px Montserrat,sans-serif;color:var(--t1);cursor:pointer}
-  .alc-res button big{display:block;font-size:22px;font-weight:800;margin-bottom:2px}
-  .alc-res button.si-neg{border-color:var(--ok);background:var(--ok-bg);color:var(--ok)}
-  .alc-res button.si-pos{border-color:var(--mal);background:var(--mal-bg);color:var(--mal)}
-  .alc-cartel{border-radius:14px;padding:22px 18px;text-align:center;margin-bottom:14px;background:#fff;box-shadow:var(--sombra)}
-  .alc-cartel.mal{border-top:6px solid var(--mal)} .alc-cartel.al{border-top:6px solid var(--alerta)}
-  .alc-cartel h2{font-size:20px;font-weight:800;letter-spacing:-.3px;color:var(--t1);margin-bottom:6px}
-  .alc-cartel p{font-size:13.5px;color:var(--t2)}
-  .alc-reloj{font-size:44px;font-weight:800;letter-spacing:-1px;color:var(--alerta);margin:12px 0 4px}
-  .alc-titulo{font-size:19px;font-weight:800;letter-spacing:-.3px;color:var(--t1);margin:4px 2px 4px}
-  .alc-bajada{font-size:12.5px;color:var(--t3);margin:0 2px 14px}
-  .alc-lee{margin-top:8px;font-size:12.5px;padding:8px 10px;border-radius:9px;background:#f1f3f5;color:var(--t2)}
-  .alc-paso .alc-lee b,.alc-lee b{display:inline;font-size:inherit;color:inherit}
-  .alc-lee.ok{background:var(--ok-bg);color:var(--ok)} .alc-lee.mal{background:var(--mal-bg);color:var(--mal)} .alc-lee.al{background:var(--alerta-bg);color:var(--alerta)}
-  /* cámara en vivo (v6.3) */
-  .cam-full{position:fixed;inset:0;z-index:300;background:#0f1216;display:flex;flex-direction:column;color:#fff;font-family:Montserrat,sans-serif}
-  .cam-top{display:flex;align-items:center;justify-content:space-between;padding:calc(10px + env(safe-area-inset-top)) 14px 10px}
-  .cam-top b{font-size:15px}
-  .cam-top button{background:rgba(255,255,255,.12);color:#fff;border:0;border-radius:9px;padding:8px 12px;font:600 13px Montserrat,sans-serif}
-  .cam-marco{position:relative;flex:1;overflow:hidden;background:#000}
-  .cam-marco video{width:100%;height:100%;object-fit:cover;display:block}
-  .cam-marco video.espejo{transform:scaleX(-1)}
-  .cam-ovalo{position:absolute;left:50%;top:44%;width:62%;max-width:300px;aspect-ratio:3/4;transform:translate(-50%,-50%);border:3px solid rgba(255,255,255,.85);border-radius:50%;box-shadow:0 0 0 2000px rgba(0,0,0,.35)}
-  .cam-guia{position:absolute;left:12px;right:12px;top:12px;background:rgba(0,0,0,.55);border-radius:10px;padding:9px 12px;font-size:13px;text-align:center}
-  .cam-reto{position:absolute;left:12px;right:12px;bottom:14px;background:rgba(15,18,22,.82);border-radius:14px;padding:13px 14px;text-align:center}
-  .cam-reto .ic{font-size:30px;line-height:1;margin-bottom:4px}
-  .cam-reto b{display:block;font-size:17px;font-weight:800}
-  .cam-reto small{display:block;font-size:11.5px;opacity:.75;margin-top:6px}
-  .cam-pasos{display:flex;gap:6px;justify-content:center;margin-top:9px}
-  .cam-pasos span{width:26px;height:6px;border-radius:3px;background:rgba(255,255,255,.25)}
-  .cam-pasos span.ahora{background:#f0b429} .cam-pasos span.hecho{background:#3ecf8e}
-  .cam-disparo{margin:14px auto calc(18px + env(safe-area-inset-bottom));background:#fff;color:#12161b;border:0;border-radius:999px;padding:15px 30px;font:800 16px Montserrat,sans-serif}
-  .cam-aviso{margin:12px;border-radius:12px;padding:12px 14px;font-size:13px;line-height:1.4}
-  .cam-aviso.mal{background:#fbe9e7;color:#b3261e} .cam-aviso.al{background:#fdeedd;color:#8a4b0a}
-  .cam-aviso .btn{margin-top:10px}
-  .alc-fin{background:var(--ok-bg);color:var(--ok);border-radius:12px;padding:11px 13px;font-size:13px;font-weight:600;margin-bottom:12px}
   .aviso.al{border-left-color:var(--alerta)} .aviso.ok{border-left-color:var(--ok)} .aviso.mal{border-left-color:var(--mal)}
   .aviso > div{flex:1;min-width:0}
   .aviso b{font-size:13px;display:block;color:var(--t1)} .aviso span{font-size:11.5px;color:var(--t3);display:block;margin-top:2px}
@@ -643,7 +595,7 @@ const {useState, useEffect, useMemo, useRef} = React;
    por ?api=).
    ============================================================ */
 const PREFIJO = "CFB:";
-const APP_VERSION = "v6.3 · 30-09-2026";
+const APP_VERSION = "v6.0.1 · 16-09-2026";
 const _mem = {};
 const almacen = {
   get(k){ const K = PREFIJO + k; try { return localStorage.getItem(K); } catch(e){ return Object.prototype.hasOwnProperty.call(_mem,K) ? _mem[K] : null; } },
@@ -1229,7 +1181,6 @@ function CheckForm({user, datos, empresaId, empresaNombre, demo, onSaved}){
   const vehiculos = datos.vehiculos || [];
   const [vehId,setVehId] = useState("");
   const [movimiento,setMovimiento] = useState("SALIDA DEL PREDIO");
-  const [terminaServicio,setTerminaServicio] = useState(true);   // v6.2: el ingreso al predio termina el servicio
   const [kmFijado,setKmFijado] = useState(false);
   const [chofer2,setChofer2] = useState("");
   const [linea,setLinea] = useState(LINEAS[0]);
@@ -1294,8 +1245,6 @@ function CheckForm({user, datos, empresaId, empresaNombre, demo, onSaved}){
     setBusy(true);
     const res = await enviarOEncolar("guardarCheck", informe, demo);
     setBusy(false);
-    /* v6.2: con el ingreso al predio termina el servicio: el próximo pide el test de alcoholemia */
-    if (movimiento === "INGRESO AL PREDIO" && terminaServicio) alcTerminarServicio(user.dni);
     onSaved({...informe, adjuntos: informe.adjuntos.length, pendiente: !!res.encolado});
     mostrarToast(res.encolado
       ? "📴 Sin señal: el informe quedó guardado en el teléfono. Se manda solo cuando haya conexión."
@@ -1303,7 +1252,7 @@ function CheckForm({user, datos, empresaId, empresaNombre, demo, onSaved}){
         ? "✓ Informe guardado. Las novedades pasaron a Mantenimiento como correctivas."
         : "✓ Informe guardado correctamente"));
     setKmIni(""); setKmFin(""); setMarcados({}); setComentarios({}); setAdjuntos([]);
-    setConNovedades(true); setHora(horaAhora()); setChofer2(""); setTerminaServicio(true);
+    setConNovedades(true); setHora(horaAhora()); setChofer2("");
   };
   return (
     <React.Fragment>
@@ -1318,13 +1267,6 @@ function CheckForm({user, datos, empresaId, empresaNombre, demo, onSaved}){
             🔽 Ingreso al predio
           </button>
         </div>
-        {movimiento === "INGRESO AL PREDIO" && <div style={{marginTop:12}}>
-          <div className="chk-help" style={{marginBottom:6}}><b>¿Con este ingreso terminás tu servicio del día?</b> Si decís que sí, la próxima vez que entres a la app te va a pedir el test de alcoholemia.</div>
-          <div className="toggle">
-            <button className={terminaServicio ? "on-ok":""} onClick={()=>setTerminaServicio(true)}>Sí, termino el servicio</button>
-            <button className={!terminaServicio ? "on-ok":""} onClick={()=>setTerminaServicio(false)}>No, vuelvo a salir</button>
-          </div>
-        </div>}
       </div>
       <div className="card">
         <h2>Datos del viaje</h2>
@@ -2878,510 +2820,6 @@ function Biblioteca({datos}){
   );
 }
 /* ================= APP v3 ================= */
-/* ================= TEST DE ALCOHOLEMIA AL TOMAR SERVICIO (v6.3) =================
-   Equipo: Dräger Alcotest 5000. NO da número: ✓ con luz VERDE = sin alcohol,
-   ✗ con luz ROJA = alcohol detectado (umbral fijo del aparato).
-   El teléfono no mide alcohol: la app obliga a hacer el test, junta la prueba
-   (foto del aparato + selfie con control de movimiento, hora y GPS; las dos con la cámara en vivo), mira de qué color está la luz en la
-   foto y no deja trabajar si da mal. Mientras no esté hecho, solo se puede
-   llamar al asesor o a contingencias.
-   · Luz verde en la foto Y el conductor marca verde → APTO, entra a la app.
-   · Luz roja en la foto O el conductor marca roja → espera ALC_ESPERA_MIN y contraprueba.
-     (la lectura de la foto puede frenar, pero nunca aprueba sola)
-   · La contraprueba también da roja → NO APTO: bloqueado por ALC_VIGENCIA_H horas.
-   · El servicio TERMINA con el check de "Ingreso al predio" (si marca que termina
-     el servicio). El próximo servicio pide el test de nuevo. Tope de seguridad:
-     ALC_VIGENCIA_H horas aunque no haga el check.
-   Cada intento va a la planilla (hoja Alcoholemia) con su propia cola:
-   sin señal queda en el teléfono y sale solo, sin trabar los otros envíos. */
-const ALC_VIGENCIA_H = 12;
-const ALC_ESPERA_MIN = 15;
-const ALC_FOTO_MAX_MIN = 10;      // la foto tiene que ser recién sacada
-const ALC_MAX_DUDOSAS = 3;        // fotos donde no se distingue la luz antes de dejar enviar igual (va "a revisar")
-const alcClave = (dni) => "ALC_" + soloDigitos(dni);
-const alcLeer = (dni) => { try { return JSON.parse(almacen.get(alcClave(dni))||"null"); } catch(e){ return null; } };
-const alcGuardarEst = (dni, est) => almacen.set(alcClave(dni), JSON.stringify(est));
-/* se llama desde el check de ingreso al predio */
-const alcTerminarServicio = (dni) => {
-  const e = alcLeer(dni);
-  if (e && e.estado === "apto") alcGuardarEst(dni, {estado:"fin", desde:new Date().toISOString()});
-};
-/* en qué situación está el conductor: "apto" | "espera" | "contraprueba" | "bloqueado" | "falta" */
-function alcSituacion(dni, ahora){
-  const e = alcLeer(dni); const t = ahora || Date.now();
-  if (!e || !e.desde) return {estado:"falta"};
-  const desde = new Date(e.desde).getTime();
-  if (e.estado === "apto" && t - desde < ALC_VIGENCIA_H*3600000) return {estado:"apto", hasta: desde + ALC_VIGENCIA_H*3600000};
-  if (e.estado === "bloqueado" && t - desde < ALC_VIGENCIA_H*3600000) return {estado:"bloqueado", hasta: desde + ALC_VIGENCIA_H*3600000};
-  if (e.estado === "positivo1"){
-    if (t - desde < ALC_ESPERA_MIN*60000) return {estado:"espera", hasta: desde + ALC_ESPERA_MIN*60000};
-    if (t - desde < ALC_VIGENCIA_H*3600000) return {estado:"contraprueba"};
-  }
-  if (e.estado === "fin" && t - desde < ALC_VIGENCIA_H*3600000) return {estado:"falta", fin: desde};
-  return {estado:"falta"};
-}
-
-/* ---- ¿de qué color está la luz del alcoholímetro en la foto? ----
-   Todo adentro del teléfono, sin internet. Busca píxeles muy brillantes y muy
-   saturados verdes o rojos, y exige que estén JUNTOS en un lugar chico (la luz),
-   para no confundirse con una campera verde o una pared roja. */
-function alcDetectarLuz(dataUrl){
-  return new Promise((listo)=>{
-    const img = new Image();
-    img.onerror = () => listo({luz:"NO SE LEE", verde:0, rojo:0});
-    img.onload = () => {
-      try{
-        const L = 320, esc = Math.min(1, L/Math.max(img.width, img.height));
-        const w = Math.max(1, Math.round(img.width*esc)), h = Math.max(1, Math.round(img.height*esc));
-        const cv = document.createElement("canvas"); cv.width = w; cv.height = h;
-        const cx = cv.getContext("2d"); cx.drawImage(img, 0, 0, w, h);
-        const d = cx.getImageData(0, 0, w, h).data;
-        const cel = Math.max(8, Math.round(Math.max(w,h)/16));
-        const cw = Math.ceil(w/cel), ch = Math.ceil(h/cel);
-        const gv = new Array(cw*ch).fill(0), rj = new Array(cw*ch).fill(0);
-        let tv = 0, tr = 0;
-        for (let y = 0; y < h; y++) for (let x = 0; x < w; x++){
-          const i = (y*w + x)*4, r = d[i], g = d[i+1], b = d[i+2];
-          const mx = Math.max(r,g,b), mn = Math.min(r,g,b);
-          if (mx < 140) continue;                       // poco brillo
-          const s = (mx - mn)/mx;
-          if (s < 0.5) continue;                        // poco color (blanco, gris, piel)
-          let hue;
-          if (mx === r) hue = 60*(((g - b)/(mx - mn)) % 6);
-          else if (mx === g) hue = 60*((b - r)/(mx - mn) + 2);
-          else hue = 60*((r - g)/(mx - mn) + 4);
-          if (hue < 0) hue += 360;
-          const k = Math.floor(y/cel)*cw + Math.floor(x/cel);
-          if (hue >= 85 && hue <= 175){ gv[k]++; tv++; }
-          else if ((hue <= 12 || hue >= 340) && s >= 0.6){ rj[k]++; tr++; }
-        }
-        /* la mejor zona de 3x3 celdas */
-        const zona = (arr) => { let m = 0;
-          for (let yy = 0; yy < ch; yy++) for (let xx = 0; xx < cw; xx++){
-            let t = 0;
-            for (let dy = -1; dy <= 1; dy++) for (let dx = -1; dx <= 1; dx++){
-              const X = xx+dx, Y = yy+dy; if (X>=0 && Y>=0 && X<cw && Y<ch) t += arr[Y*cw+X];
-            }
-            if (t > m) m = t;
-          } return m; };
-        const zv = zona(gv), zr = zona(rj);
-        const minimo = Math.max(6, Math.round(cel*cel*0.04));
-        const juntos = (z, tot) => tot > 0 && z/tot >= 0.35;   // concentrado = una luz, no una superficie
-        /* un color desparramado (fondo, ropa, pared) no cuenta como luz */
-        const v = juntos(zv, tv) ? zv : 0, rr = juntos(zr, tr) ? zr : 0;
-        let luz = "NO SE LEE";
-        if (v >= minimo && v >= 2*rr) luz = "VERDE";
-        else if (rr >= minimo && rr >= 2*v) luz = "ROJA";
-        listo({luz, verde: zv, rojo: zr});
-      }catch(e){ listo({luz:"NO SE LEE", verde:0, rojo:0}); }
-    };
-    img.src = dataUrl;
-  });
-}
-
-/* cola propia de los tests */
-const alcColaLeer = () => { try { return JSON.parse(almacen.get("COLA_ALC")||"[]"); } catch(e){ return []; } };
-const alcColaGuardar = (arr) => { try { almacen.set("COLA_ALC", JSON.stringify(arr)); } catch(e){ alert("La memoria del teléfono está llena. Avisale al asesor."); } };
-let _alcProcesando = false;
-async function alcProcesarCola(){
-  if (_alcProcesando || !API_URL || !navigator.onLine) return;
-  _alcProcesando = true;
-  try{
-    let cola = alcColaLeer();
-    while (cola.length){
-      const it = cola[0];
-      const adjuntos = await subirAdjuntosPendientes(it.adjuntos || []);
-      alcColaGuardar(cola);   // quedan anotadas las URLs de las fotos ya subidas
-      const r = await apiPost({action:"guardarAlcoholemia", data:{...it, adjuntos}});
-      if (!r || r.ok === false) throw new Error((r&&r.error)||"error del script");
-      cola.shift(); alcColaGuardar(cola);
-    }
-  }catch(e){ /* sin señal o el conector todavía no lo tiene: se reintenta más tarde */ }
-  finally{ _alcProcesando = false; }
-}
-function alcRelojTxt(ms){
-  if (ms <= 0) return "00:00";
-  const s = Math.ceil(ms/1000), m = Math.floor(s/60), r = s % 60;
-  return (m<10?"0":"")+m+":"+(r<10?"0":"")+r;
-}
-const alcHoraDe = (ms) => { const d = new Date(ms); return (d.getHours()<10?"0":"")+d.getHours()+":"+(d.getMinutes()<10?"0":"")+d.getMinutes(); };
-
-/* ---- CÁMARA EN VIVO (v6.3) ----
-   Las dos fotos del test se sacan con la cámara ADENTRO de la app: no se puede
-   elegir un archivo, ni de la galería ni bajado de internet.
-   La selfie pasa además un CONTROL DE MOVIMIENTO: la app le pide girar la cabeza
-   a un costado, al otro y abrir la boca (en orden al azar) y lo verifica con los
-   puntos de la cara. Una foto impresa o en otra pantalla no puede hacerlo.
-   El reconocedor de caras (face-api, gratis, corre en el teléfono) se baja la
-   primera vez que hay señal y queda guardado. Sin señal y sin haberlo bajado
-   nunca, deja sacar la selfie igual pero va marcada "a revisar". */
-const FACEAPI_URL = "https://cdn.jsdelivr.net/npm/@vladmandic/face-api@1.7.15/dist/face-api.js";
-const FACEAPI_MODELOS = "https://cdn.jsdelivr.net/npm/@vladmandic/face-api@1.7.15/model/";
-const VIVO_TIEMPO_SEG = 40;          // tiempo para hacer los movimientos
-const ALC_ENTRE_FOTOS_MIN = 5;       // entre la foto del aparato y la selfie
-let _faceCargando = null;
-function cargarDetectorCaras(){
-  if (_faceCargando) return _faceCargando;
-  _faceCargando = new Promise((ok, falla) => {
-    if (window.faceapi) return ok(window.faceapi);
-    const s = document.createElement("script");
-    s.src = FACEAPI_URL;
-    s.onload = () => window.faceapi ? ok(window.faceapi) : falla(new Error("no cargó"));
-    s.onerror = () => falla(new Error("sin señal para bajar el reconocedor de caras"));
-    document.head.appendChild(s);
-  }).then(async (fa) => {
-    /* motor de cálculo: la placa de video del teléfono (webgl); si no hay, el procesador */
-    let ok = false;
-    try { ok = await fa.tf.setBackend("webgl"); } catch(e){ ok = false; }
-    if (!ok) { try { await fa.tf.setBackend("cpu"); } catch(e){} }
-    await fa.tf.ready();
-    if (!fa.nets.tinyFaceDetector.isLoaded) await fa.nets.tinyFaceDetector.loadFromUri(FACEAPI_MODELOS);
-    if (!fa.nets.faceLandmark68Net.isLoaded) await fa.nets.faceLandmark68Net.loadFromUri(FACEAPI_MODELOS);
-    return fa;
-  }).catch((e) => { _faceCargando = null; throw e; });
-  return _faceCargando;
-}
-/* medidas de la cara con los 68 puntos: hacia qué lado mira y cuánto abre la boca */
-function medirCara(pts){
-  const P = (i) => pts[i];
-  const dl = P(30).x - P(0).x, dr = P(16).x - P(30).x;           // nariz contra los dos lados de la mandíbula
-  const giro = (dl + dr) > 0 ? (dl - dr) / (dl + dr) : 0;         // 0 = de frente, ±0,4 = girado
-  const ancho = Math.hypot(P(64).x - P(60).x, P(64).y - P(60).y) || 1;
-  const boca = Math.hypot(P(66).x - P(62).x, P(66).y - P(62).y) / ancho;   // 0 = cerrada
-  return {giro, boca};
-}
-const RETOS = {
-  lado:  {txt:"Girá la cabeza hacia un costado", ic:"↔"},
-  otro:  {txt:"Ahora girala hacia el otro costado", ic:"↔"},
-  boca:  {txt:"Abrí bien grande la boca", ic:"😮"},
-};
-function sacarCuadro(video, espejo){
-  const w = video.videoWidth || 640, h = video.videoHeight || 480;
-  const esc = Math.min(1, 1100 / Math.max(w, h));
-  const cv = document.createElement("canvas");
-  cv.width = Math.round(w*esc); cv.height = Math.round(h*esc);
-  const cx = cv.getContext("2d");
-  if (espejo){ cx.translate(cv.width, 0); cx.scale(-1, 1); }
-  cx.drawImage(video, 0, 0, cv.width, cv.height);
-  const dataUrl = cv.toDataURL("image/jpeg", 0.72);
-  return {base64: dataUrl.split(",")[1], mime:"image/jpeg", preview: dataUrl};
-}
-
-/* pantalla completa con la cámara. modo "aparato" (cámara de atrás, botón sacar foto)
-   o "cara" (cámara de adelante + control de movimiento, la foto sale sola) */
-function CamaraEnVivo({modo, onFoto, onCerrar}){
-  const refVideo = useRef(null);
-  const [error,setError] = useState("");
-  const [listo,setListo] = useState(false);
-  const [msg,setMsg] = useState(modo === "cara" ? "Preparando el control de movimiento…" : "");
-  const [paso,setPaso] = useState(-1);          // -1 = mirando de frente para arrancar
-  const [retos] = useState(() => Math.random() < 0.5 ? ["lado","otro","boca"] : ["boca","lado","otro"]);
-  const [restan,setRestan] = useState(VIVO_TIEMPO_SEG);
-  const [sinDetector,setSinDetector] = useState(false);
-  const [fallo,setFallo] = useState(false);
-  const [intento,setIntento] = useState(0);
-  const esCara = modo === "cara";
-
-  /* prender la cámara */
-  useEffect(()=>{
-    let stream = null, vivo = true;
-    (async ()=>{
-      try{
-        if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) throw new Error("Este teléfono no deja usar la cámara desde la app.");
-        stream = await navigator.mediaDevices.getUserMedia({audio:false, video:{facingMode: esCara ? "user" : {ideal:"environment"}, width:{ideal:1280}, height:{ideal:720}}});
-        if (!vivo){ stream.getTracks().forEach(t=>t.stop()); return; }
-        const v = refVideo.current; v.srcObject = stream;
-        await v.play().catch(()=>{});
-        setListo(true);
-      }catch(e){
-        setError(/Permission|NotAllowed|denied/i.test(String(e && (e.name||e.message)))
-          ? "La app no tiene permiso para usar la cámara. Tocá el candado de la barra de direcciones → Permisos → Cámara → Permitir, y volvé a probar."
-          : (e.message || "No se pudo abrir la cámara."));
-      }
-    })();
-    return ()=>{ vivo = false; if (stream) stream.getTracks().forEach(t=>t.stop()); };
-  },[]);
-
-  /* control de movimiento */
-  useEffect(()=>{
-    if (!esCara || !listo) return;
-    let corriendo = true, t0 = Date.now(), fa = null;
-    let etapa = -1, seguidos = 0, base = null, signo = 0, sinCara = 0;
-    setPaso(-1); setFallo(false); setRestan(VIVO_TIEMPO_SEG);
-    const retosHechos = [];
-    const ciclo = async () => {
-      if (!corriendo) return;
-      const v = refVideo.current;
-      const quedan = VIVO_TIEMPO_SEG - Math.floor((Date.now() - t0)/1000);
-      setRestan(quedan);
-      if (quedan <= 0){ setFallo(true); setMsg("No se detectaron los movimientos a tiempo."); return; }
-      let det = null;
-      try{
-        det = await fa.detectSingleFace(v, new fa.TinyFaceDetectorOptions({inputSize: 224, scoreThreshold: 0.4})).withFaceLandmarks();
-      }catch(e){ det = null; }
-      if (!corriendo) return;
-      if (!det){
-        sinCara++;
-        if (sinCara > 4) setMsg("No te veo. Poné la cara adentro del óvalo, con luz de frente.");
-        seguidos = 0;
-      } else {
-        sinCara = 0;
-        const m = medirCara(det.landmarks.positions);
-        if (etapa === -1){                                  // arrancar mirando de frente
-          if (Math.abs(m.giro) < 0.15){ seguidos++; base = base ? {giro:base.giro, boca: Math.min(base.boca, m.boca)} : m; }
-          else seguidos = 0;
-          setMsg("Mirá de frente a la cámara");
-          if (seguidos >= 2){ etapa = 0; seguidos = 0; setPaso(0); }
-        } else if (etapa < retos.length){
-          const r = retos[etapa]; let ok = false;
-          if (r === "lado"){ ok = Math.abs(m.giro) > 0.33; if (ok) signo = Math.sign(m.giro); }
-          if (r === "otro") ok = signo !== 0 && m.giro * signo < -0.33;
-          if (r === "boca") ok = m.boca > Math.max(0.42, (base ? base.boca : 0) + 0.22);
-          setMsg(RETOS[r].txt);
-          seguidos = ok ? seguidos + 1 : 0;
-          if (seguidos >= 1){ retosHechos.push(r); etapa++; seguidos = 0; setPaso(etapa); }   // con una lectura alcanza: la pose es lo que no se puede falsificar
-        } else {                                            // terminar mirando de frente: ahí sale la foto
-          setMsg("¡Bien! Mirá de frente otra vez");
-          seguidos = Math.abs(m.giro) < 0.15 && m.boca < Math.max(0.35, (base ? base.boca : 0) + 0.15) ? seguidos + 1 : 0;
-          if (seguidos >= 1){
-            corriendo = false;
-            const f = sacarCuadro(v, true);
-            onFoto({...f, vivacidad:"OK", retos: retosHechos.join(" · "), segundos: Math.round((Date.now()-t0)/1000)});
-            return;
-          }
-        }
-      }
-      setTimeout(ciclo, 60);
-    };
-    cargarDetectorCaras().then((x)=>{ fa = x; if (corriendo){ setMsg("Mirá de frente a la cámara"); ciclo(); } })
-      .catch(()=>{ if (corriendo){ setSinDetector(true); setMsg(""); } });
-    return ()=>{ corriendo = false; };
-  },[listo, intento]);
-
-  const sacarAparato = () => { const f = sacarCuadro(refVideo.current, false); onFoto(f); };
-  const sacarSinControl = () => { const f = sacarCuadro(refVideo.current, true); onFoto({...f, vivacidad:"SIN CONTROL", retos:"", segundos:0}); };
-  const r = paso >= 0 && paso < retos.length ? RETOS[retos[paso]] : null;
-
-  return (
-    <div className="cam-full">
-      <div className="cam-top">
-        <b>{esCara ? "Control de movimiento" : "Foto del alcoholímetro"}</b>
-        <button onClick={onCerrar}>Cancelar</button>
-      </div>
-      <div className="cam-marco">
-        <video ref={refVideo} playsInline muted autoPlay className={esCara ? "espejo" : ""}></video>
-        {esCara && <div className="cam-ovalo"></div>}
-        {!esCara && <div className="cam-guia">Encuadrá el alcoholímetro: que se vean la pantalla y la luz</div>}
-        {esCara && listo && !sinDetector && !fallo &&
-          <div className="cam-reto">
-            {r && <div className="ic">{r.ic}</div>}
-            <b>{msg}</b>
-            <div className="cam-pasos">{retos.map((x,i)=> <span key={i} className={paso > i ? "hecho" : (paso === i ? "ahora" : "")}></span>)}</div>
-            <small>Quedan {restan} s · Tené el alcoholímetro en la mano, que se vea</small>
-          </div>}
-      </div>
-      {error && <div className="cam-aviso mal">{error}</div>}
-      {!esCara && listo && <button className="cam-disparo" onClick={sacarAparato}>📸 Sacar foto</button>}
-      {esCara && fallo && <div className="cam-aviso al">
-        {msg} Hacé los movimientos despacito, con la cara bien iluminada.
-        <button className="btn" onClick={()=>setIntento(i=>i+1)}>Probar de nuevo</button>
-      </div>}
-      {esCara && sinDetector && <div className="cam-aviso al">
-        No hay señal para bajar el control de movimiento (se baja una sola vez, la primera vez que hay internet).
-        Podés sacar la selfie igual: va a quedar <b>marcada para revisar</b>.
-        <button className="btn" onClick={sacarSinControl}>Sacar selfie igual</button>
-      </div>}
-    </div>
-  );
-}
-
-/* un paso del test con su botón de cámara */
-function PasoCamara({n, titulo, ayuda, foto, onAbrir, children}){
-  return (
-    <div className={"alc-paso" + (foto ? " hecho" : "")}>
-      <div className="n">{foto ? "✓" : n}</div>
-      <div>
-        <b>{titulo}</b><span>{ayuda}</span>
-        <div className="alc-foto">
-          {foto && <img src={foto.preview} alt=""/>}
-          <button className="alc-cam" onClick={onAbrir}>{foto ? "Sacar de nuevo" : "📷 Abrir la cámara"}</button>
-        </div>
-        {children}
-      </div>
-    </div>
-  );
-}
-
-function TestAlcoholemia({user, datos, empresaId, empresaNombre, demo, abrirContactos, onListo}){
-  const dni = soloDigitos(user.dni);
-  const [ahora,setAhora] = useState(Date.now());
-  const sit = alcSituacion(dni, ahora);
-  const vehiculos = datos.vehiculos || [];
-  const [vehId,setVehId] = useState(vehiculos.length===1 ? String(vehiculos[0].id) : "");
-  const [fotoVisor,setFotoVisor] = useState(null);
-  const [selfie,setSelfie] = useState(null);
-  const [resultado,setResultado] = useState("");   // "verde" | "roja"
-  const [dudosas,setDudosas] = useState(0);
-  const [busy,setBusy] = useState(false);
-  const [camara,setCamara] = useState("");        // "" | "aparato" | "cara"
-  const [leyendo,setLeyendo] = useState(false);
-  useEffect(()=>{ if (navigator.onLine) cargarDetectorCaras().catch(()=>{}); },[]);
-  const alSacarAparato = async (f) => {
-    setCamara(""); setLeyendo(true);
-    const l = await alcDetectarLuz(f.preview);
-    setLeyendo(false);
-    if (l.luz === "NO SE LEE") setDudosas(x=>x+1);
-    setFotoVisor({tipo:"imagen", nombre:"alcoholimetro-"+Date.now()+".jpg", mime:f.mime, base64:f.base64, preview:f.preview, url:"", luz:l.luz, px:l, t:Date.now()});
-  };
-  const alSacarCara = (f) => {
-    setCamara("");
-    setSelfie({tipo:"imagen", nombre:"selfie-"+Date.now()+".jpg", mime:f.mime, base64:f.base64, preview:f.preview, url:"",
-      vivacidad:f.vivacidad, retos:f.retos, segundos:f.segundos, t:Date.now()});
-  };
-  useEffect(()=>{ window.scrollTo(0,0); const t = setInterval(()=>setAhora(Date.now()), 1000); return ()=>clearInterval(t); },[]);
-  useEffect(()=>{ if (sit.estado === "apto") onListo(); },[sit.estado]);
-  const esContra = sit.estado === "contraprueba";
-  const luzFoto = fotoVisor ? fotoVisor.luz : "";
-  const noCoincide = (luzFoto === "VERDE" && resultado === "roja") || (luzFoto === "ROJA" && resultado === "verde");
-
-  const enviar = async () => {
-    if (!fotoVisor) return alert("Falta la foto del alcoholímetro con la luz prendida (paso 2).");
-    if (!selfie) return alert("Falta la selfie con el control de movimiento (paso 3).");
-    if (Math.abs(selfie.t - fotoVisor.t) > ALC_ENTRE_FOTOS_MIN*60000){
-      setFotoVisor(null);
-      return alert("Entre la foto del alcoholímetro y la selfie pasaron más de " + ALC_ENTRE_FOTOS_MIN + " minutos. Soplá de nuevo y sacale otra foto al aparato.");
-    }
-    if (luzFoto === "NO SE LEE" && dudosas < ALC_MAX_DUDOSAS)
-      return alert("En la foto no se distingue la luz del alcoholímetro. Sacala de nuevo: más cerca, sin flash, que se vea la luz prendida.");
-    if (!resultado) return alert("Marcá de qué color se prendió la luz (paso 4).");
-    setBusy(true);
-    const gps = await ubicacionRapida();
-    const intento = esContra ? 2 : 1;
-    /* la foto puede frenar, pero nunca aprueba sola: para ser apto tienen que decir verde los dos */
-    const positivo = resultado === "roja" || luzFoto === "ROJA";
-    const coincide = luzFoto === "NO SE LEE" ? "" : (noCoincide ? "NO" : "SI");
-    const revisar = luzFoto === "NO SE LEE" || noCoincide || selfie.vivacidad !== "OK";
-    const estadoFinal = !positivo ? "APTO" : (intento === 1 ? "CONTRAPRUEBA" : "NO APTO");
-    const registro = {
-      uid: Date.now() + "-" + Math.random().toString(36).slice(2),
-      empresa: empresaNombre, empresa_id: empresaId,
-      fecha: hoy(), hora: horaAhora(),
-      conductor: user.nombre, conductor_id: user.id, dni: user.dni,
-      ...(vehId ? datosDeUnidad(vehiculos, vehId) : {vehiculo_id:"", interno:"", patente:""}),
-      equipo: "Dräger Alcotest 5000",
-      intento: intento,
-      resultado: positivo ? "POSITIVO" : "NEGATIVO",
-      luz_conductor: resultado === "verde" ? "VERDE" : "ROJA",
-      luz_foto: luzFoto,
-      coincide: coincide,
-      revisar: revisar ? "SI" : "",
-      estado: estadoFinal,
-      lectura_verde: fotoVisor.px ? fotoVisor.px.verde : "", lectura_rojo: fotoVisor.px ? fotoVisor.px.rojo : "",
-      fotos_sin_leer: dudosas,
-      control_movimiento: selfie.vivacidad || "",
-      movimientos: selfie.retos || "",
-      segundos_movimiento: selfie.segundos || "",
-      lat: gps.lat || "", lng: gps.lng || "",
-      adjuntos: [fotoVisor, selfie].map(a => ({tipo:a.tipo, nombre:a.nombre, mime:a.mime, base64:a.base64, url:""})),
-      timestamp: new Date().toISOString(),
-    };
-    if (!demo){
-      const cola = alcColaLeer(); cola.push(registro); alcColaGuardar(cola);
-      alcProcesarCola();
-    }
-    const est = !positivo ? "apto" : (intento === 1 ? "positivo1" : "bloqueado");
-    alcGuardarEst(dni, {estado: est, desde: new Date().toISOString(), intento, porFoto: positivo && resultado === "verde"});
-    setBusy(false);
-    setFotoVisor(null); setSelfie(null); setResultado(""); setDudosas(0);
-    setAhora(Date.now());
-  };
-
-  if (sit.estado === "bloqueado") return (
-    <div className="alc">
-      <div className="alc-cartel mal">
-        <h2>🚫 No podés tomar servicio</h2>
-        <p>La contraprueba también dio luz roja. Quedó registrado con las fotos, la hora y el lugar.</p>
-        <p style={{marginTop:10}}><b>Llamá ahora al responsable de contingencias</b> para que organicen tu reemplazo.</p>
-        <p style={{marginTop:10,fontSize:12,color:"var(--t3)"}}>La app se vuelve a habilitar a las {alcHoraDe(sit.hasta)}.</p>
-      </div>
-      <button className="aviso mal" onClick={abrirContactos}>
-        <div><b>Llamar a contingencias o al asesor</b><span>Con un toque.</span></div><span className="chip-ir">Llamar</span>
-      </button>
-    </div>
-  );
-
-  if (sit.estado === "espera"){
-    const e = alcLeer(dni) || {};
-    return (
-    <div className="alc">
-      <div className="alc-cartel al">
-        <h2>⏳ Esperá y repetí el test</h2>
-        <p>{e.porFoto
-          ? "En la foto se ve la luz ROJA del alcoholímetro, aunque marcaste verde. Por seguridad hay que repetirlo."
-          : "El alcoholímetro dio luz roja. Puede ser por algo que comiste, un enjuague bucal o un caramelo."}</p>
-        <div className="alc-reloj">{alcRelojTxt(sit.hasta - ahora)}</div>
-        <p><b>No comas, no fumes y no tomes nada</b> hasta hacer la contraprueba. Cuando el reloj llegue a cero se habilita.</p>
-      </div>
-      <button className="aviso" onClick={abrirContactos}>
-        <div><b>Llamar al asesor o a contingencias</b><span>Si necesitás avisar que vas a demorar.</span></div><span className="chip-ir">Llamar</span>
-      </button>
-    </div>
-  ); }
-
-  if (camara) return <CamaraEnVivo modo={camara} onFoto={camara === "aparato" ? alSacarAparato : alSacarCara} onCerrar={()=>setCamara("")}/>;
-
-  return (
-    <div className="alc">
-      {sit.fin && !esContra && <div className="alc-fin">✓ Terminaste el servicio a las {alcHoraDe(sit.fin)}. Tu check de ingreso quedó guardado. Para tomar el próximo servicio, hacé el test.</div>}
-      <div className="alc-titulo">{esContra ? "Contraprueba de alcoholemia" : "Antes de tomar servicio"}</div>
-      <div className="alc-bajada">{esContra
-        ? "Ya pasaron los " + ALC_ESPERA_MIN + " minutos. Hacé el test de nuevo, igual que la primera vez."
-        : "Hacé el test de alcoholemia. Hasta que no dé luz verde no se habilita la app (sí podés llamar al asesor o a contingencias)."}</div>
-
-      <div className="alc-paso">
-        <div className="n">1</div>
-        <div><b>Soplá en el alcoholímetro</b><span>Esperá a que se prenda la luz: verde con ✓ o roja con ✗.</span>
-          {vehiculos.length > 0 && <div style={{marginTop:10}}>
-            <SelectorUnidad vehiculos={vehiculos} vehId={vehId} setVehId={setVehId} label="Unidad que vas a manejar (si ya la sabés)"/>
-          </div>}
-        </div>
-      </div>
-      <PasoCamara n="2" titulo="Sacale una foto al alcoholímetro" ayuda="Con la luz prendida y la pantalla a la vista. Sin flash. Se usa la cámara de atrás."
-        foto={fotoVisor} onAbrir={()=>setCamara("aparato")}>
-        {leyendo && <div className="alc-lee">Mirando la luz…</div>}
-        {fotoVisor && fotoVisor.luz === "VERDE" && <div className="alc-lee ok">La app ve la luz <b>VERDE</b> ✓</div>}
-        {fotoVisor && fotoVisor.luz === "ROJA" && <div className="alc-lee mal">La app ve la luz <b>ROJA</b> ✗</div>}
-        {fotoVisor && fotoVisor.luz === "NO SE LEE" && <div className="alc-lee al">No se distingue la luz. <b>Sacala de nuevo</b>: más cerca, sin flash, que se vea la luz prendida.</div>}
-      </PasoCamara>
-      {luzFoto === "NO SE LEE" && dudosas >= ALC_MAX_DUDOSAS &&
-        <div className="alc-lee al" style={{margin:"-4px 0 10px"}}>Ya probaste {dudosas} veces. Podés enviar igual: va marcado para que lo revise el responsable.</div>}
-      <PasoCamara n="3" titulo="Selfie con control de movimiento" ayuda="Con el alcoholímetro en la mano. La app te va a pedir girar la cabeza y abrir la boca; la foto sale sola."
-        foto={selfie} onAbrir={()=>setCamara("cara")}>
-        {selfie && selfie.vivacidad === "OK" && <div className="alc-lee ok">Control de movimiento <b>OK</b> ✓</div>}
-        {selfie && selfie.vivacidad !== "OK" && <div className="alc-lee al">Sin control de movimiento: va <b>marcada para revisar</b>.</div>}
-      </PasoCamara>
-      <div className={"alc-paso" + (resultado ? " hecho" : "")}>
-        <div className="n">{resultado ? "✓" : "4"}</div>
-        <div><b>¿De qué color se prendió la luz?</b><span>Marcá lo mismo que se ve en el aparato.</span>
-          <div className="alc-res">
-            <button className={resultado==="verde" ? "si-neg" : ""} onClick={()=>setResultado("verde")}><big>✓</big>Luz verde</button>
-            <button className={resultado==="roja" ? "si-pos" : ""} onClick={()=>setResultado("roja")}><big>✗</big>Luz roja</button>
-          </div>
-          {noCoincide && <div className="alc-lee mal" style={{marginTop:10}}>Ojo: en la foto se ve la luz <b>{luzFoto}</b>. Si no coincide, cuenta como luz roja.</div>}
-        </div>
-      </div>
-      <button className="btn" style={{marginTop:6}} disabled={busy} onClick={enviar}>
-        {busy ? "Guardando…" : (esContra ? "Enviar contraprueba" : "Enviar test y tomar servicio")}
-      </button>
-      <div style={{fontSize:11.5,color:"var(--t3)",textAlign:"center",marginTop:10}}>
-        Se guarda con tu nombre, la hora y dónde estás. Sin señal también funciona: sale solo cuando haya conexión.
-      </div>
-      <button className="aviso" style={{marginTop:14}} onClick={abrirContactos}>
-        <div><b>Llamar al asesor o a contingencias</b><span>Si tenés un problema con el alcoholímetro o no tenés uno a mano.</span></div><span className="chip-ir">Llamar</span>
-      </button>
-    </div>
-  );
-}
 const TITULOS = {check:"Check del viaje", novedad:"Reportar novedad", media:"Fotos de la unidad",
   venc:"Unidad · Documentación", historial:"Mis envíos", ajustes:"Personalización",
   pedidos:"Pedidos de insumos", seguimiento:"Seguimiento del taller", diagramas:"Diagramas",
@@ -3400,8 +2838,6 @@ function App(){
   const [colaN,setColaN] = useState(colaLeer().length);
   const [marcaTick,setMarcaTick] = useState(0);
   const [verContactos,setVerContactos] = useState(false);
-  const [alcTick,setAlcTick] = useState(0);
-  const [,setReloj] = useState(0);   // repinta cada minuto: el candado se vuelve a poner cuando vence el test
   const [arrancando,setArrancando] = useState(()=>{ try{ return !!JSON.parse(almacen.get("SESION")||"null"); }catch(e){ return false; } });
   const marca = marcaFinal(datos);
   useEffect(()=>{ aplicarMarca(marca); },[datos, marcaTick]);
@@ -3429,10 +2865,10 @@ function App(){
   /* al abrir: retomar sesión; cola: al reconectar y cada 1 minuto */
   useEffect(()=>{
     refrescar();
-    procesarCola(setColaN); alcProcesarCola();
-    const alConectar = () => { procesarCola(setColaN); alcProcesarCola(); refrescar(); };
+    procesarCola(setColaN);
+    const alConectar = () => { procesarCola(setColaN); refrescar(); };
     window.addEventListener("online", alConectar);
-    const timer = setInterval(()=>{ procesarCola(setColaN); alcProcesarCola(); setReloj(Date.now()); }, 60000);
+    const timer = setInterval(()=>procesarCola(setColaN), 60000);
     return ()=>{ window.removeEventListener("online", alConectar); clearInterval(timer); };
   },[]);
   if (arrancando) return (
@@ -3455,24 +2891,6 @@ function App(){
   const salir = () => { setUser(null); setDatos(null); almacen.del("SESION"); setVista("home"); };
   const alGuardar = (inf) => setRegistros(registrosAgregar(soloDigitos(yo.dni), inf));
   const abrirUnidad = (v) => { setInternoSel(String(v.vehiculo || v.patente || "")); setVista("venc"); };
-  /* candado: sin test de alcoholemia APTO vigente no se entra (solo se puede llamar) */
-  if (alcSituacion(yo.dni).estado !== "apto") return (
-    <React.Fragment>
-      <div className="topbar">
-        <div className="tt">
-          <Insignia marca={marca} size={34}/>
-          <div className="who"><span className="emp">{empresaNombre}</span><b>{yo.nombre}</b></div>
-        </div>
-        <div style={{display:"flex",gap:6}}>
-          <button className="ib tel" title="Llamar al asesor o a contingencias" onClick={()=>setVerContactos(true)}><Ico n="phone" s={18}/></button>
-          <button className="ib" title="Salir" onClick={salir}><Ico n="out" s={18}/></button>
-        </div>
-      </div>
-      {verContactos && <Contactos contactos={datos.contactos} onCerrar={()=>setVerContactos(false)}/>}
-      <TestAlcoholemia key={alcTick} user={yo} datos={datosEmpresa} empresaId={empresaId} empresaNombre={empresaNombre}
-        demo={modoDemo} abrirContactos={()=>setVerContactos(true)} onListo={()=>{ setAlcTick(t=>t+1); setVista(INTERNO_QR ? "venc" : "home"); }}/>
-    </React.Fragment>
-  );
   return (
     <React.Fragment>
       <div className="topbar">
